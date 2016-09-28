@@ -1,0 +1,9 @@
+<div>
+  <div class="row" ng-repeat="item in narrowItDown.foundItems">
+    <div class="col-xs-12 col-sm-5">{{ item.short_name }} - {{ item.name}}</div>
+    <div class="col-xs-12 col-sm-5">{{ item.description }}</div>
+    <div class="col-xs-12 col-sm-2">
+      <button class="btn" ng-click="narrowItDown.remove($index);">Don't want this one!</button>
+    </div>
+  </div>
+</div>
